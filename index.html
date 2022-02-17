@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>savings</title>
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
     <!-- bootstrap link -->
@@ -14,77 +14,86 @@
 </head>
 
 <body class="">
-    <main>
-        <h1 class="d-flex justify-content-center text-primary mb-5">
-            Personal Savings
-        </h1>
-        <div class="d-flex justify-content-around">
-            <div class="w-50">
-                <img src="6425322.jpg" alt="" class="img-fluid">
-            </div>
-            <div id="calc-section" class="w-50 d-flex justify-content-around border rounded">
-                <div class="h-10 w-50 text-dark ">
-                    <div class="pt-5">
-                        <h3 class=" d-flex justify-content-center">Income</h3>
-                        <div class=" d-flex justify-content-center px-5">
+    <main class="container">
+        <div class="row">
+            <h1 class="d-flex justify-content-center text-primary mb-5 col-sm-12
+            col-12 ">
+                Personal Savings
+            </h1>
+            <div class="col-sm-12 col-12 ">
+                <div class="container">
+                    <div class="d-flex justify-content-around align-items-center row  row-cols-sm-1 row-cols-1">
+                        <div class="w-50 col">
+                            <img src="6425322.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div id="calc-section" class="w-50 d-flex justify-content-center border rounded col">
+                            <div class="h-10 w-50 text-dark ">
+                                <div class="pt-5">
+                                    <h3 class=" d-flex justify-content-center">Income</h3>
+                                    <div class=" d-flex justify-content-center px-5">
 
-                            <h5>Income: <span><input type="text" class="text-dark"></span></h5>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class=" d-flex justify-content-center">Expenses</h3>
-                        <div class="px-5  d-flex ">
-
-                            <h5>Food: <span> <input type="text" class="text-dark"></span></h5>
-                        </div>
-                        <div class="px-5 d-flex ">
-
-                            <h5>Rent: <span> <input type="text" class="text-dark "></span></h5>
-                        </div>
-                        <div class="px-5 d-flex ">
-
-                            <h5>Cloths: <span> <input type="text" class="text-dark"></span></h5>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center pt-5">
-                        <div class="btn w-40 h-15 bg-info text-light">
-                            <h4 class="pt-1">Calculate</h4>
-                        </div>
-                    </div>
-                    <div>
-                        <p>
-                        <h2>Total Expenses: <span>000</span></h2>
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                        <h2>Balance: <span>000</span></h2>
-                        </p>
-                    </div>
-                    <div>
-                        <div>
-                            <h2>
-                                Save <input type="text" class="w-25"> % <div
-                                    class="btn w-40 h-15 bg-info text-light mb-1">
-                                    <h4 class="">save</h4>
+                                        <h5>Income: <span><input type="text" class="text-dark"></span></h5>
+                                    </div>
                                 </div>
-                            </h2>
+                                <div>
+                                    <h3 class=" d-flex justify-content-center">Expenses</h3>
+                                    <div class="px-5  d-flex justify-content-center">
+
+                                        <h5>Food: <span> <input type="text" class="text-dark"></span></h5>
+                                    </div>
+                                    <div class="px-5 d-flex justify-content-center">
+
+                                        <h5>Rent: <span> <input type="text" class="text-dark "></span></h5>
+                                    </div>
+                                    <div class="px-5 d-flex justify-content-center ">
+
+                                        <h5>Cloths: <span> <input type="text" class="text-dark"></span></h5>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center pt-5">
+                                    <div class="btn w-40 h-15 bg-info text-light">
+                                        <h4 class="pt-1">Calculate</h4>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                    <h3>Total Expenses: <span>000</span></h3>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                    <h3>Balance: <span>000</span></h3>
+                                    </p>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h3>
+                                            Save <input type="text" class="w-25"> % <div
+                                                class="btn w-40 h-15 bg-info text-light mb-1">
+                                                <h4 class="">save</h4>
+                                            </div>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                    <h3>Saving Amount: <span>000</span></h3>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                    <h3>Remaining Balance: <span>000</span></h3>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <p>
-                        <h2>Total Expenses: <span>000</span></h2>
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                        <h2>Balance: <span>000</span></h2>
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <!--js script-->
+    <script src="script/script.js"></script>
     <!-- bootstrap js script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
