@@ -33,7 +33,8 @@
                                     <h3 class=" d-flex justify-content-center">Income</h3>
                                     <div class=" d-flex justify-content-center px-5">
 
-                                        <h5>Income: <span><input type="text" class="text-dark" id="incomeInput"></span>
+                                        <h5>Income: <span><input type="number" class="text-dark"
+                                                    id="incomeInput"></span>
                                         </h5>
                                     </div>
                                 </div>
@@ -41,17 +42,18 @@
                                     <h3 class=" d-flex justify-content-center ">Expenses</h3>
                                     <div class="px-5  d-flex justify-content-center ">
 
-                                        <h5>Food: <span> <input type="text" class="text-dark" id="foodInput"></span>
+                                        <h5>Food: <span> <input type="number" class="text-dark" id="foodInput"></span>
                                         </h5>
                                     </div>
                                     <div class="px-5 d-flex justify-content-center">
 
-                                        <h5>Rent: <span> <input type="text" class="text-dark " id="rentInput"></span>
+                                        <h5>Rent: <span> <input type="number" class="text-dark " id="rentInput"></span>
                                         </h5>
                                     </div>
                                     <div class="px-5 d-flex justify-content-center ">
 
-                                        <h5>Cloths: <span> <input type="text" class="text-dark" id="clothsInput"></span>
+                                        <h5>Cloths: <span> <input type="number" class="text-dark"
+                                                    id="clothsInput"></span>
                                         </h5>
                                     </div>
                                 </div>
@@ -73,7 +75,7 @@
                                 <div>
                                     <div>
                                         <h3>
-                                            Save <input type="text" class="w-25" id="save-input"> % <div
+                                            Save <input type="number" class="w-25" id="save-input"> % <div
                                                 class="btn w-40 h-15 bg-info text-light mb-1" id="save-button">
                                                 <h4 class="">save</h4>
                                             </div>
@@ -94,6 +96,18 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class=" warn" id="negative">
+                <h1 class="d-flex justify-content-center text-danger mb-5 col-sm-12
+            col-12">
+                    input cannot be negative
+                </h1>
+            </div>
+            <div class="warn" id="insufficiant">
+                <h1 class="d-flex justify-content-center text-danger mb-5 col-sm-12
+            col-12 warn">
+                    insufficiant
+                </h1>
             </div>
         </div>
     </main>

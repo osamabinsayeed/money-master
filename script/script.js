@@ -4,6 +4,9 @@ let foodText = document.getElementById('foodInput');
 let rentText = document.getElementById('rentInput');
 let clothsText = document.getElementById('clothsInput');
 let saveText = document.getElementById('save-input');
+//warning
+const negativeWarning = document.getElementById('negative');
+const insufficiantWarning = document.getElementById('insufficiant');
 
 
 
@@ -18,18 +21,27 @@ function inputNumber(input) {
 //calculaation
 document.getElementById('calculateButton').addEventListener('click', function () {
     let income = inputNumber(incomeText.value);
-
     let foodExpences = inputNumber(foodText.value);
     let rentExpences = inputNumber(rentText.value);
     let clothsExpences = inputNumber(clothsText.value);
+    let savingPercentage = inputNumber(saveText.value);
     let totalExpences = foodExpences + rentExpences + clothsExpences;
     let balance = income - totalExpences;
-    document.getElementById('total-expences').innerText = totalExpences;
-    document.getElementById('balance').innerText = balance;
+    if (income < 0 || foodExpences < 0 || rentExpences < 0 || clothsExpences < 0) {
+        negativeWarning.style.display = 'block';
+    }
+    else if (balance < 0) {
+        insufficiantWarning.style.display = 'block';
+    }
+    else {
+        document.getElementById('total-expences').innerText = totalExpences;
+        document.getElementById('balance').innerText = balance;
+    }
 
 
 
 })
+//savings calculaton
 document.getElementById('save-button').addEventListener('click', function () {
     let income = inputNumber(incomeText.value);
     let foodExpences = inputNumber(foodText.value);
@@ -41,8 +53,13 @@ document.getElementById('save-button').addEventListener('click', function () {
     let percentage = savingPercentage / 100;
     let savingAmount = income * percentage;
     let remainingBanlance = balance - savingAmount;
-    document.getElementById('saving-amount').innerText = savingAmount;
-    document.getElementById('remaining-balance').innerText = remainingBanlance;
+    if (balance < savingAmount) {
+        insufficiantWarning.style.display = 'block';
+    }
+    else {
+        document.getElementById('saving-amount').innerText = savingAmount;
+        document.getElementById('remaining-balance').innerText = remainingBanlance;
+    }
 })
 
 

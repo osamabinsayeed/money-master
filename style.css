@@ -1,3 +1,6 @@
 #calc-section {
 background-color: rgb(242, 248, 248);
 }
+.warn{
+    display: none;
+}
